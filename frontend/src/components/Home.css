@@ -1,0 +1,210 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background-color: #0a5726;
+  color: white;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #33cc33;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-button {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  background-color: #33cc33;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+  background-color: #248f24;
+}
+
+.hero-section {
+  position: relative;
+  height: 60vh;
+  width: 100%;
+  background-image: url('C:/Users/lenovo/Downloads/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+  margin-top: 80px;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: inherit;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.hero-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.hero-subtitle {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  color: #f0f0f0;
+}
+
+.hero-button {
+  padding: 0.8rem 1.5rem;
+  background-color: #248f24;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+  background-color: #33cc33;
+}
+
+.info-cards {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  padding: 2rem 1rem;
+  background-color: black;
+  color: white;
+}
+
+.card {
+  flex: 1;
+  margin: 0 1rem;
+  padding: 1.5rem;
+  background-color: #0a5726;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #33cc33;
+}
+
+.card p {
+  font-size: 1rem;
+}
+
+.home-footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 0.8rem 1rem;
+  background-color: #0a5726;
+  color: white;
+}
+
+.footer-column {
+  flex: 1;
+  margin: 0 0.5rem;
+}
+
+.footer-column h4 {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-column p {
+  font-size: 0.8rem;
+}
+
+.newsletter-input {
+  width: 100%;
+  padding: 0.4rem;
+  margin-bottom: 0.5rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.newsletter-button {
+  padding: 0.4rem 1rem;
+  background-color: #33cc33;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.newsletter-button:hover {
+  background-color: #248f24;
+}
+
+@media (max-width: 768px) {
+  .home-header {
+    flex-wrap: wrap;
+  }
+
+  .nav-links {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .info-cards {
+    flex-direction: column;
+  }
+
+  .card {
+    margin: 1rem 0;
+  }
+
+  .home-footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 0.8rem;
+  }
+
+  .footer-column {
+    margin-bottom: 0.8rem;
+  }
+}
